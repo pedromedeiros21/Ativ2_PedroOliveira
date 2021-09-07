@@ -17,15 +17,6 @@ public class Pedido
         _itemPedidos.Add(itemPedido);
     }
 
-    public void TotalPedido()
-    {
-        foreach (ItemPedido x in _itemPedidos)
-        {
-            Console.WriteLine("Produto: {0} - Valor Unitário: {1} - Quantidade: {2} - Total: {3}",
-                x.Descricao, x.ValorUnitario, x.Quantidade, x.Total);
-        }
-    }
-
     public List<ItemPedido> ListaPedido()
     {
         return _itemPedidos;
